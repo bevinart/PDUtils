@@ -1,3 +1,20 @@
+'''
+Each Note:
+    Vertical Line Splitter: 
+    - +20 X
+    QWidget for displaying each instrument:
+    - Geometry: 31 x 20
+    - Placement: 20 x totalNotesPlaced-1, Y=356
+    - Tooltip: Name of instrument
+    - Stylesheet: background-color: rgb(
+        0 + (25 x (totalNotes / 3))
+        75 x (totalNotes % 3),
+        75 x (totalNotes % 3)
+    );
+
+MAX_NOTES: 30 notes
+'''
+
 from PyQt5.QtGui import QIcon
 from PyQt5 import QtWidgets, uic
 from PyQt5.QtWidgets import QFileDialog, QMessageBox
